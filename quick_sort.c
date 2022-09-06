@@ -61,14 +61,19 @@ int partition(int arr[], int s, int e)
         {
             // increment  and swap
             j++;
+            // optimisation
+            // won't swap if the element is comparing itself
             if(i != j)
             {
                 swap(&arr[i], &arr[j]);
             }
         }
     }
+    // returns sorted element pos
     return j;
 }
+
+// call by reference swapping
 void swap(int*a, int*b)
 {
     int temp;
