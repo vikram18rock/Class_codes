@@ -10,8 +10,8 @@ quick_sort(arr, s, e)
         quick_sort(arr, s, q+1)
 
 partition(arr, s, e)
-    j = -1
-    for i = 0 to n-1
+    j = s-1
+    for i = s to e
         if arr[i] <= arr[n-1]
             j++
             swap arr[j] arr[i]
