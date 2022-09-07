@@ -85,7 +85,7 @@ void max_heapify(int a[], int s, int e)
 void build_max_heap(int a[], int s, int e)
 {
     // heapify startin from non leafs to 1st node(0)
-    for(int i = e/2 - 1; i >= s; i--)
+    for(int i = (e-1)/2; i >= s; i--)
     {
         max_heapify(a, i, e);
     }
