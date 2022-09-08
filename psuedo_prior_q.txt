@@ -1,0 +1,22 @@
+HEAP-EXTRACT-MAX(A)
+    if A.heap-size < 1
+    error “heap underflow”
+    max = A[1]
+    A[1] = A[A.heap-size]
+    A.heap-size = A.heap-size - 1
+    MAX-HEAPIFY(A, 1)
+    return max
+
+max_heap_insert(a, key)
+    a.heap_size++
+    a[a.heap_size] = -infinity
+
+heap_increase_key(a, i, key)
+    if key < a[i]
+        error "new key is smaller than current key"
+    a[i] = key;
+    while i > 1 and a[parent(i)] < a[i]
+        swap a[parent(i)] , a[i]
+        i = parent(i)
+
+max_heapify

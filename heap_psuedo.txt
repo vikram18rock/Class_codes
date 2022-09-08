@@ -8,9 +8,9 @@ max_heapify(a, i)
     l = left(i)
     r = right(i)
     largest = i`
-    if l <= a.heapsize and a[l] > a[i]
+    if l <= a.heapsize and a[l] > a[lar]
         largest = l
-    if r <= a.heapsize and a[r] > a[i]
+    if r <= a.heapsize and a[r] > a[lar]
         largest = r
     if largest != i
         swap a[i] , a[largest]
@@ -19,4 +19,4 @@ max_heapify(a, i)
 build_max_heap(a)
     a.heapsize = a.length
     for i = a.length / 2 down to 1
-        max_heapify(a, 1)
+        max_heapify(a, i)
