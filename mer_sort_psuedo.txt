@@ -1,0 +1,26 @@
+merge_sort(a, s, e)
+    if s < e
+        m = (s + e)/2
+        merge_sort(a, s, m)
+        merge_sort(a, m+1, e)
+        merge(a, s, m, e)
+merge(a, s, m, e)
+    n1 = m-s+1
+    n2 = e-m
+
+    l[n1 + 1], r[n2 + 1]
+    for i = 1 to n1
+        l[i] = a[s + i - 1]
+    for i = 1 to n2
+        r[i] = a[m + i]
+    l[n1 + 1] = infinity
+    r[n2 + 1] = infinity
+
+    i = 1, j = 1
+    for k = s to e
+        if l[i] < r[j]
+            a[k] = l[i]
+            i++
+        else
+            a[k] = r[j]
+            j++
