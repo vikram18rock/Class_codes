@@ -29,7 +29,7 @@ void insert_sort(int a[], int n)
     for (i = 1; i < n; i++)
     {
         key = a[i];
-        for (j = i-1; j >= 0 && a[j] > key; j--)
+        for (j = i-1; j >= 0 && a[j] < key; j--)
         {
             a[j+1] = a[j];
         }
