@@ -1,0 +1,32 @@
+main()
+1. Read the size of shortlist and number of laptops in A and B into n1, n2, n3
+2. Read the elements into 3 arrays S,A,B
+3. for i = 0 to n2-1 // printing model numbers only in shop A
+    a. if ( search (B , A[i] , n3) )
+        i. continue
+    b. else
+        i. print( A[i] ) // add spaces while printing
+4. for i = 0 to n3-1 // printing model numbers only in shop B
+    a. if ( search (A , B[i] , n2) )
+        i. continue
+    b. else
+        i. print( B[i] ) // add spaces while printing
+5. for i = 0 to n2-1 // printing model numbers that are common in both shops A and B
+    a. if ( search (B, A[i] , n3) )
+        i. print( A[i] ) // add spaces while printing
+6. flag = 0
+7. for i = 0 to n1-1 // model numbers that are in shopping list but not in shops A or B
+    a. if ( search (A, S[i] , n2 ) or search (B, S[i] , n3) )
+        i. continue
+    b. else
+        i. print(S[i]) // add spaces while printing
+        ii. flag =1
+8. if(flag == 0)
+    a. print( -1 )
+
+search( A, key,n ):
+//returns true if element is found in array A else returns false
+1. for i = 0 to n-1
+    a. if(key == A[i])
+        i. return true
+2. return false
