@@ -7,7 +7,7 @@ heap_sort(a, n)
 max_heapify(a, i)
     l = left(i)
     r = right(i)
-    largest = i`
+    largest = i
     if l <= a.heapsize and a[l] > a[lar]
         largest = l
     if r <= a.heapsize and a[r] > a[lar]
