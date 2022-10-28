@@ -2,6 +2,6 @@
 - This repo is specially for file tracking of *clg projects*
 > beware
 > > of this
-> >   what
+> >   ....what
 > > 
-> >   son of god
+> >   ....son of god
