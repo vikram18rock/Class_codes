@@ -1,21 +1,36 @@
+// sort logic
 merge_sort(a, s, e)
+    // base case
     if s < e
         m = (s + e)/2
+        
+        // recursive calls
         merge_sort(a, s, m)
         merge_sort(a, m+1, e)
+        // merging the sorted arrays into single sorted array
         merge(a, s, m, e)
+        
+// merge funtion
 merge(a, s, m, e)
+    // length of 1st part
     n1 = m-s+1
+    // 2nd part
     n2 = e-m
 
+    // sizes 1 more than length
     l[n1 + 1], r[n2 + 1]
+    
+    // copying the arrays
     for i = 1 to n1
         l[i] = a[s + i - 1]
     for i = 1 to n2
         r[i] = a[m + i]
+    
+    // giving possibly large values to ends of arrays
     l[n1 + 1] = infinity
     r[n2 + 1] = infinity
 
+    // merging the arrays
     i = 1, j = 1
     for k = s to e
         if l[i] < r[j]
