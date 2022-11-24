@@ -1,0 +1,33 @@
+CONCEPT
+
+• Binary Search
+
+•   Input : A = <a1,a2,…, an> 
+    such that a1 <= a2 <= … <= an
+    
+•   and a key k
+
+•   Compare k with the middle element of the sequence,
+•   say A[mid]
+•   If k = A[mid] return mid
+•   If k < A [mid] 
+        search in the first half,
+        (A[1..mid-1])
+•   If k > A [mid] search
+        second in the half (A[mid+1..n])
+
+PSUEDO CODE
+BinarySearch (A, m, n, k)
+
+    //Base Case
+    if (m>n)
+        mid=(m+n)/2
+        //Base Case
+        if A[mid]=k 
+            return mid;
+        // search left side
+        else if k < A[mid]
+            BinarySearch(A, m, mid-1, k)
+        // search right side
+        else if k > A[mid]
+            BinarySearch(A, mid+1, n, k)

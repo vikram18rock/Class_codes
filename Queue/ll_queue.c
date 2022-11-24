@@ -9,7 +9,7 @@ struct node
 
 typedef struct node * ll;
 
-struct stk
+struct que
 {
     // filled size of que
     int len;
@@ -17,7 +17,7 @@ struct stk
     ll head, tail;
 };
 
-typedef struct stk * q_ll;
+typedef struct que * q_ll;
 
 ll create_node(int k)
 {
@@ -79,7 +79,7 @@ void print(q_ll q)
 
 int main()
 {
-    struct stk Q;
+    struct que Q;
     q_ll q = &Q;
     q->head = 0;
     q->tail = 0;
