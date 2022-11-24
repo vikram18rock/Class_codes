@@ -22,13 +22,12 @@ BinarySearch (A, m, n, k)
     //Base Case
     if (m>n)
         mid=(m+n)/2
-    //Base Case
-    if A[mid]=k 
-        return mid;
-
-    // search left side
-    else if k < A[mid]
-        BinarySearch(A, m, mid-1, k)
-    // search right side
-    else if k > A[mid]
-        BinarySearch(A, mid+1, n, k)
+        //Base Case
+        if A[mid]=k 
+            return mid;
+        // search left side
+        else if k < A[mid]
+            BinarySearch(A, m, mid-1, k)
+        // search right side
+        else if k > A[mid]
+            BinarySearch(A, mid+1, n, k)
