@@ -11,4 +11,4 @@ consider sequence  ` 4, 1, 3, 2`<br>
  Lastly place 2 in it's position in sorted subarray same as we did for 3
  <br>`1, 2, 3, 4`
  
-You can see the psuedo code [here](/ins_sort_psuedo.txt)
+You can see the psuedo code [here](./ins_sort_psuedo.txt)
