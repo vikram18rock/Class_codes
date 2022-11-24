@@ -10,3 +10,5 @@ consider sequence  ` 4, 1, 3, 2`<br>
  
  Lastly place 2 in it's position in sorted subarray same as we did for 3
  <br>`1, 2, 3, 4`
+ 
+You can see the psuedo code [here](https://github.com/vikram18rock/Class_codes/tree/main/Sorting_Algos/Insertion_sort/ins_sort_psuedo.txt)
