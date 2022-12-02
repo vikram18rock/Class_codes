@@ -1,0 +1,21 @@
+binary_search(a[], n, key)
+	// creating looping variables
+	int s = 0, e = n-1
+	// for not repeating list again
+	while s < e
+		// mid index
+		mid = (s + e) / 2
+		
+		// element found at mid
+		if a[mid] == key
+			return mid
+		// key is in right side
+		else if a[mid] < key
+			// update s to search through right part
+			s = mid
+		// key is in left side
+		else
+			// update e to search through left
+			e = mid
+	// arrived here cause not found
+	return -1
