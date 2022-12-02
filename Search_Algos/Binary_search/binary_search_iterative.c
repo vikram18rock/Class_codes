@@ -24,24 +24,6 @@ int main()
     //print output
     printf("%d\n", res);
 
-    //printing next indexes
-    for(int k = res; k < n && res >= 0; k++)
-    {
-        if(input[k] > input[res])
-        {
-            res = 1;
-            printf("%d ", k);
-        }
-        else
-        {
-            res = -1;
-        }
-    }
-    if(res == -1)
-    {
-        printf("%d ", res);
-    }
-
     return 0;
 }
 
