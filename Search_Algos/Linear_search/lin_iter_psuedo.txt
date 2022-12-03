@@ -1,0 +1,5 @@
+lin_search(a[], n, key)
+    while i = 1 to n
+        if a[i] == key
+            return i
+    return -1
