@@ -50,8 +50,6 @@ void dequeue(q q_ar)
     if (!(queue_empty(q_ar)))
     {
         printf("%d ", q_ar->arr[q_ar->head]);
-        // if list is empty already (just using the case if any extra dequeue command is given to efficient way)
-        // doesn't have any effect if the below if(only if) block is removed
         if (q_ar->head == q_ar->tail)
         {
             q_ar->head = -1;
